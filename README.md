@@ -1,2 +1,5 @@
-# sous_vide_src
-source code for the sous vide project. eventually change name and include the hardware too.
+# sous_vide_project
+all files related to the sous vide project.
+
+src
+contain all firmware source code for the controller. at least initially based on arduino.
