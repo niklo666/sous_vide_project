@@ -1,15 +1,16 @@
 
 /*
-  sous vide ccontroller
+  sous vide controller
 
-  "items":
-  - heater
-  - pump
-  - water level sensor (x2?)
-  - temp sensor
-  - rotary encoder
-  - display
-  - wifi
+  "items" to control:
+  - heater, the actual heater element probably controlled by time slotted on/off...
+  - pump, responsible for circulating the water and keeping a consistent water temp...
+  - water level sensor (x2?), safety feature to avoid heating with low or no water...
+  - temp sensor, control feedback...
+  - rotary encoder, ui input device...
+  - display, ui output...
+  - wifi, extended ui and control...
+  - buzzer!?, to notify e.g. errors, timer,....
 
   (main) states:
 
@@ -20,6 +21,7 @@
 
 */
 
+// main states...
 enum
 {
   MAIN_STATE_INIT = 0,
@@ -38,6 +40,9 @@ unsigned long g_main_state = MAIN_STATE_INIT;
 void setup()
 {
   // todo: setup pin directions and default values...
+  
+  // todo: leave the controller in idle mode...
+  g_main_state = MAIN_STATE_IDLE;
 }
 
 void loop()
