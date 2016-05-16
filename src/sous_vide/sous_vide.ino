@@ -24,10 +24,10 @@
 // main states...
 enum
 {
-  MAIN_STATE_INIT = 0,
-  MAIN_STATE_IDLE,
-  MAIN_STATE_RUNNING,
-  MAIN_STATE_ERROR,
+  MAIN_STATE_INIT = 0,  // initial state before hardware init is ready...
+  MAIN_STATE_IDLE,      // waiting for commands...
+  MAIN_STATE_RUNNING,   // control loop is running...
+  MAIN_STATE_ERROR,     // an error has occured...
 };
 
 unsigned long g_main_state = MAIN_STATE_INIT;
@@ -47,6 +47,83 @@ void setup()
 
 void loop()
 {
+  // ui...
+  
+  // wifi...
+  
+  // control...
+  
+  // error handling...
   
 }
+
+//******************
+// hardware code...
+//******************
+void display_setup()
+{
+  todo: implement...
+}
+
+void encoder_setup()
+{
+  todo: implement...
+}
+
+void heater_setup()
+{
+  todo: implement...
+}
+
+void pump_setup()
+{
+  todo: implement...
+}
+
+void temp_sensor_setup()
+{
+  todo: implement...
+}
+
+//************
+// ui code...
+//************
+void ui_setup()
+{
+  todo: implement...
+}
+
+// function to be called each turn of the arduino loop...
+void ui_loop()
+{
+}
+
+//********************
+// controller code...
+//********************
+void controller_setup()
+{
+}
+
+// function to be called each turn of the arduino loop...
+void controller_loop()
+{
+}
+
+//**************
+// wifi code...
+//**************
+void wifi_setup()
+{
+}
+
+// function to be called each turn of the arduino loop...
+void wifi_loop()
+{
+}
+
+//*****************
+// utility code...
+//*****************
+
 
