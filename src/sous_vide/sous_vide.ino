@@ -30,7 +30,18 @@ enum
   MAIN_STATE_ERROR,     // an error has occured...
 };
 
+enum
+{
+  ERROR_NONE = 0,
+  
+  ERROR_WATER_LEVEL,    // 
+  
+  // 
+  ERROR_UNKNOWN = -1
+};
+
 unsigned long g_main_state = MAIN_STATE_INIT;
+unsigned long g_error_code = ERROR_NONE;
 
 
 //**********************
